@@ -15,6 +15,7 @@ void linkedList(struct Node *ptr)
 	}
 }
 
+//Insertion at the beginning
 struct Node * insertAtFirst(struct Node *head, int data)
 {
 	struct Node * ptr = (struct Node *)malloc(sizeof(struct Node));
@@ -23,6 +24,7 @@ struct Node * insertAtFirst(struct Node *head, int data)
 	return ptr;
 }
 
+//Insertion in between
 struct Node * insertAtIndex(struct Node*head, int data, int index)
 {
 	struct Node*ptr=(struct Node *)malloc(sizeof(struct Node));
@@ -40,6 +42,7 @@ struct Node * insertAtIndex(struct Node*head, int data, int index)
 	return head;
 }
 
+//Insertion at the end
 struct Node* insertAtEnd(struct Node*head,int data)
 {
 	struct Node*ptr=(struct Node*)malloc(sizeof(struct Node));
@@ -54,6 +57,7 @@ struct Node* insertAtEnd(struct Node*head,int data)
 	return head;
 }
 
+//Insertion after Node
 struct Node* insertAfterNode(struct Node *head, struct Node *prevNode, int data)
 {
 	struct Node * ptr = (struct Node *) malloc(sizeof(struct Node));
